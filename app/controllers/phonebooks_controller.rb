@@ -1,0 +1,2 @@
+class PhonebooksController < ApplicationController
+end
