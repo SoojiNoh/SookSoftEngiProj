@@ -10,5 +10,7 @@ class ScheduleTest < ActiveSupport::TestCase
     })
     
     assert !schedule.save, 'Failed to validate'
+    assert !schedule.destroy, 'Failed to destroy'
+    assert !schedule.update, 'Failed to update'
   end
 end
