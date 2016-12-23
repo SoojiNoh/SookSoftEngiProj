@@ -8,5 +8,6 @@ class PhonebookTest < ActiveSupport::TestCase
      })
      assert !phonebook.save, 'Failed to save'
      assert !phonebook.destroy, 'Failed to destroy'
+     assert !phonebook.update, 'Failed to update'
   end
 end
