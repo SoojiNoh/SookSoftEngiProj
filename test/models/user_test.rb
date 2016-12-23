@@ -7,5 +7,6 @@ class UserTest < ActiveSupport::TestCase
        encrypted_password: 'exo0408'
      })
      assert !user.save, 'Failed to save'
+     assert !user.destroy, 'Failed to destroy'
   end
 end
