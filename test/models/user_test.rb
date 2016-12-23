@@ -8,5 +8,6 @@ class UserTest < ActiveSupport::TestCase
      })
      assert !user.save, 'Failed to save'
      assert !user.destroy, 'Failed to destroy'
+     assert !user.update, 'Failed to update'
   end
 end
