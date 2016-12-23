@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>이름:</strong>
+  <%= @phonebook.name %>
+</p>
+
+<p>
+  <strong>번호:</strong>
+  <%= @phonebook.number %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_phonebook_path(@phonebook) %> |
+<%= link_to 'Back', phonebooks_path %>

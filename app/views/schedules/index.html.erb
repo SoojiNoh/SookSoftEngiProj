@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>스튜핏 캘린더</h1>
+<h1>스케줄</h1>
 
 <%= form_tag(schedules_path, :method => "get", id: "search-form") do %>
 <%= text_field_tag :search, params[:search], placeholder: "시간형식'1995-01-24 23:59:59" %>
@@ -8,7 +8,7 @@
 <% end %>
 
 
-<table>
+<table style="width:50%;">
   <thead>
     <tr>
       <th>일정</th>
@@ -43,7 +43,7 @@
 
 <%= link_to '일정추가', new_schedule_path %>
 
-<div id='calendar'></div>
+<div id='calendar' style="width:40%;"></div>
 
 <script>
 $(document).ready(function(){
