@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
 
+gem 'rspec', '~> 3.0'
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'devise'
+gem 'guard-rspec'
+gem 'rspec-rails'
+gem 'spring'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record

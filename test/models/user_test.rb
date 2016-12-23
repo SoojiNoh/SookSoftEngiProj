@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+ test "user save" do
+     @user = User.new({
+       email: 'choco12343@naver.com',
+       encrypted_password: 'exo0408'
+     })
+     assert !user.save, 'Failed to save'
+  end
 end
