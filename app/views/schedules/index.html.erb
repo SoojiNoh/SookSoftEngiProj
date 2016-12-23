@@ -46,19 +46,22 @@
 <div id='calendar'></div>
 
 <script>
-  $('#calendar').fullCalendar(
-    {
-      scheduleSources: [
-
-        // your schedule source
-        {
-            url: '/schedules.json', // use the `url` property
-            color: 'yellow',    // an option!
-            textColor: 'green'  // an option!
-        }
-        ]
-             // schedules: '/schedules.json'
-              // put your options and callbacks here
-          });  
+$(document).ready(function(){
+       $('#calendar').empty();
+       $('#calendar').fullCalendar(
+          {
+            eventSources: [
+      
+              // your schedule source
+              {
+                  url: '/schedules.json',// use the `url` property
+                  color: 'yellow',    // an option!
+                  textColor: 'green'  // an option!
+              }
+              ]
+                   // schedules: '/schedules.json'
+                    // put your options and callbacks here
+                });   
+     });
 </script>
 
